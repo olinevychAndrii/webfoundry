@@ -1,0 +1,27 @@
+
+<div class="container" ng-controller="ViewController">
+    <div class="row">
+        <div class="col-xs-12">
+            <h1>View profile</h1>        
+        </div>
+       
+        <div class="row row-content" ng-repeat="person in persons | filter:customFilter">
+            <div class="col-xs-12 col-sm-10" >
+                 <figure>
+                     <img src="{{person.picture.large}}">
+                    <figcaption>
+                       <h3><b>Name:</b> {{person.name.first}} {{person.name.last}}</h3>
+                    <p><b>Email:</b> {{person.email}}</p>
+                    <p><b>Username:</b> {{person.login.username}}</p>
+                    <p><b>Password:</b> {{person.login.password}}</p>
+
+                    </figcaption>
+                </figure>
+
+            </div>
+            <div class="col-xs-12 col-sm-2">
+            <a ui-sref="app.editeprofile({registered:person.registered})"><button class="btn btn-primary btn-medium">Edite</button></a>
+            </div>
+        </div>
+    </div> 
+</div>

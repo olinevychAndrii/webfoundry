@@ -1,0 +1,22 @@
+<div class="container" ng-controller="IndexController">
+    <h1>Students profiles</h1>
+       
+    <div class="row row-content">
+        <div ng-if="error" class="col-xs-12 alert alert-danger">{{errorMessage}}</div>
+        
+        
+        <div class="col-xs-12 col-sm-6" ng-repeat="person in persons">
+             <figure>
+                 <a  ui-sref="app.viewprofile({registered:person.registered})"><img src="{{person.picture.large}}"></a>
+                <figcaption>
+                    <h3><b>Name:</b> {{person.name.first}} {{person.name.last}}</h3>
+                    <p><b>Email:</b> {{person.email}}</p>
+                    <p><b>Username:</b> {{person.login.username}}</p>
+                    <p><b>Password:</b> {{person.login.password}}</p>
+                    
+                </figcaption>
+            </figure>
+        </div>
+        
+    </div> 
+</div>

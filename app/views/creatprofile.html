@@ -1,0 +1,57 @@
+<div class="container" ng-controller="CreatController">
+    <div class="row row-content">
+        <div class="col-xs-12 col-sm-6">
+            <h1>Creat profile</h1>
+             <form class="form-horizontal" name="userForm" ng-submit="submitUser()">
+					
+                    <div class="form-group">
+                        <label for="firstname" class="col-sm-2 control-label">first name</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="firstname" name="firstname" placeholder="Enter your first name" ng-model="newUser.name.first" required>
+                        </div>
+                        
+                    </div>
+                 <div class="form-group">
+                        <label for="lastname" class="col-sm-2 control-label">Last name</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="lastname" name="fullname" placeholder="Enter your second name" ng-model="newUser.name.last" required>
+                        </div>
+                </div>
+                 <div class="form-group">
+                        <label for="email" class="col-sm-2 control-label">Email</label>
+                        <div class="col-sm-10">
+                            <input type="email" class="form-control" id="lastname" name="fullname" placeholder="Enter your email" ng-model="newUser.email" required>
+                        </div>
+                </div>
+                 <div class="form-group">
+                    <label for="username" class="col-sm-2 control-label">Username</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="username" name="username" placeholder="Enter your username" ng-model="newUser.login.username" required>
+
+
+                    </div>
+                        
+                </div>
+                 <div class="form-group">
+                        <label for="password" class="col-sm-2 control-label">Password</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="password" name="password" placeholder="Enter your password" ng-model="newUser.login.password" required>
+                        </div>
+                </div>
+                 <div class="form-group">
+                    <label for="ProfileImage" class="col-sm-2 control-label">Last name</label>
+                    <div class="col-sm-10">
+                        <input type="file" class="form-control" id="ProfileImage" name="ProfileImage" ng-model="newUser.picture.large" required>
+                    </div>
+                </div>
+                    
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <button type="submit" class="btn btn-primary">Add User</button>
+                        </div>
+                    </div>
+                </form>
+        </div>
+        
+    </div> 
+</div>
