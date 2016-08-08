@@ -1,0 +1,26 @@
+{
+  "name": "Y",
+  "version": "1.0.0",
+  "description": "Y",
+  "main": "Y",
+  "moduleType": [],
+  "keywords": [
+    "Y"
+  ],
+  "authors": [
+    "Y"
+  ],
+  "license": "Y",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.6.3"
+  }
+}
